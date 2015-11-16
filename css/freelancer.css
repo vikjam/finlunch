@@ -190,7 +190,15 @@ section.success a:focus,
 section.success a:active,
 section.success a.active {
     outline: 0;
-    color: #323232;
+    color: #fff;
+}
+
+section.success a:hover,
+section.success a:focus,
+section.success a:active,
+section.success a.active {
+    outline: 0;
+    color: #a31f34;
 }
 
 @media(max-width:767px) {
@@ -371,6 +379,14 @@ footer .footer-below {
 .btn:active,
 .btn.active {
     outline: 0;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active {
+    background-color: #191919;
+    border: 1px solid #191919;
 }
 
 .scroll-top {
