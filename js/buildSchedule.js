@@ -18,7 +18,7 @@ function myFunction(arr) {
     for(i = 0; i < arr.length; i++) {
         var paper_link  = "";
         if (arr[i]["gsx$linktopaper"]["$t"] != "") {
-            paper_link = '<div><a href="' + arr[i]["gsx$linktopaper"]["$t"] + '#">' + '<button type="button" class="btn btn-link btn-xs"><i class="fa fa-download"></i> Full text</button></a></div>';
+            paper_link = '<div><a href="' + arr[i]["gsx$linktopaper"]["$t"] + '">' + '<button type="button" class="btn btn-link btn-xs"><i class="fa fa-download"></i> Full text</button></a></div>';
         }
         var abstract    = "";
         var toggle_plus = "";
