@@ -26,7 +26,9 @@ function schedule_builder(arr) {
             toggle_plus = '<button type="button" class="btn btn-link btn-xs" data-toggle="modal" data-target="#abstract_modal' + i + '"><i class="fa fa-external-link"></i> Abstract</button>';
             abstract_modals += '<div class="modal fade" id="abstract_modal' + i + '" tabindex="-1" role="dialog" aria-labelledby="abstract_modal' + i +'">';
             abstract_modals += '<div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
-            abstract_modals += '<h4 class="modal-title" id="abstract_modal' + i + '">' + arr[i]["gsx$paper"]["$t"] + '</h4></div>';
+            abstract_modals += '<h5 class="modal-title" id="abstract_modal' + i + '">' + arr[i]["gsx$paper"]["$t"] + '</h5>';
+            abstract_modals += '<span class="modal-title" id="abstract_modal' + i + '">' + arr[i]["gsx$speaker"]["$t"] + '</span>';
+            abstract_modals += '</div>'
             abstract_modals += '<div class="modal-body"><b>Abstract</b>: ' + arr[i]["gsx$abstract"]["$t"] + '</div>';
             abstract_modals += '<div class="modal-footer">';
             abstract_modals += paper_link;
